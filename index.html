@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Wohnungssuche in Frankfurt</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background: #e9eef6;
+      /* Silueta de Frankfurt como fondo centrado y contenido */
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Frankfurt_skyline_Silhouette_colored.svg');
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: contain;
+    }
+    .container {
+      background: rgba(255,255,255, 0.85);
+      border-radius: 16px;
+      padding: 2rem 3rem;
+      margin-bottom: 120px;
+      box-shadow: 0 8px 32px 0 rgba(31,38,135,0.15);
+      text-align: center;
+    }
+    .counter {
+      font-size: 2rem;
+      color: #336699;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem 0.5rem;
+        margin-bottom: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>¡Samuel & Oscar suchen eine Wohnung in Frankfurt!</h1>
+    <p>Usted es el visitante número:</p>
+    <div class="counter" id="visitas">Cargando...</div>
+  </div>
+  <script>
+    // Cambia "osalsaji-frankfurt/visitas" por algo único si lo deseas
+    fetch('https://api.countapi.xyz/hit/osalsaji-frankfurt/visitas')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('visitas').innerText = data.value;
+      });
+  </script>
+</body>
+</html>
