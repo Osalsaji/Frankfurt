@@ -54,9 +54,22 @@ ul {
   margin-bottom: 1rem;
 }
 
+.amarillo-negrita {
+  color: yellow;
+  font-weight: bold;
+}
+.rojo-negrita {
+  color: red;
+  font-weight: bold;
+}
+.azul-negrita {
+  color: blue;
+  font-weight: bold;
+}    
+
 /* Ajustes para móviles */
 @media (max-width: 600px) {
-  html { font-size: 14px; }
+  html { font-size: 12px; }
   .container {
     padding: 1rem 0.5rem;
     margin-bottom: 60px;
@@ -76,14 +89,14 @@ ul {
 <body>
   <div class="container">
     <h1>¡Samuel & Oscar suchen eine Wohnung in Frankfurt!</h1>
-    <P>Wir sind Samuel Rozo (37) und Oscar Sanchez (51), zwei Kolumbianer, die seit etwa zehn Jahren in Deutschland leben. Aus beruflichen Gründen haben wir uns entschieden, nach Frankfurt zu ziehen.</P>
+    <P><span class="amarillo-negrita">`wir</span> sind Samuel Rozo (37) und Oscar Sanchez (51), zwei Kolumbianer, die seit etwa zehn Jahren in Deutschland leben. Aus beruflichen Gründen haben wir uns entschieden, nach Frankfurt zu ziehen.</P>
     <P>Samuel ist Mathematiker und arbeitet derzeit bei IQVIA, einer Unternehmensberatungsfirma für die Pharmaindustrie, als Data Scientist. Oscar ist Koch und hat sieben Jahre lang in einem deutschen Restaurant in Göttingen gearbeitet. Er fängt zum 1.08. seine neue Tätigkeit als Küchenhelfer bei der Deutsche Bank an.</P>
     <P>Zurzeit wohnen wir zur Zwischenmiete in Hausen. Uns gefällt die Gegend sehr, vor allem wegen der Nähe zum Fluss – ideal zum Joggen und Radfahren – und zum Schwimmbad, da wir gerne Triathlon machen. Deshalb suchen wir eine langfristige Wohnung genau in diesem Stadtteil.</P>
     <P>Wir sind ein ruhiges Paar, Nichtraucher und haben keine Haustiere.</P>
     <P>Falls Sie von einer Wohnung wissen, die ab dem 1. Oktober im Stadtteil Hausen oder in den angrenzenden Vierteln Rödelheim, Bockenheim oder Westend-Süd verfügbar ist, zögern Sie bitte nicht, uns zu kontaktieren. Wir würden uns sehr darüber freuen.</P>
     <P>Sie können uns auch gerne telefonisch an die Telefonnummer 015759405739/ 015781386534 oder an die E-Mail Adresse: <a href="mailto:samuel_rozo@hotmail.com">samuel_rozo@hotmail.com</a> - <a href="mailto:osalsaji@yahoo.com">osalsaji@yahoo.com </a> </P>
     <P>Usted es el visitante número:</P>    
-    <div class="counter" id="visitas">Cargando...8</div>
+    <div class="counter" id="visitas">Cargando...10</div>
   </div>
   <script>
     // Cambia "osalsaji-frankfurt/visitas" por algo único si lo deseas
